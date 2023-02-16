@@ -54,7 +54,7 @@ class ContactService {
         const result = await this.Contact.findOneAndUpdate(
             filter,
             { $set: update },
-            { returnDocument: "after" }
+            { returnDocument: "after"}
         );
         return result.value;
     }
